@@ -1,17 +1,22 @@
 # Amir Mahdi Zeynali — Machine Learning Portfolio
 
-A collection of practical notebooks and datasets covering **Machine Learning, Deep Learning, data preprocessing, Natural Language Processing, multi-armed bandits, and association-rule mining**.
+A practical portfolio of Python and Jupyter Notebook work across **Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, data preprocessing, multi-armed bandits, and association-rule mining**.
 
-This repository provides an overview of the portfolio. The complete collection—including Jupyter notebooks, CSV files, and the CNN image dataset—is available in the release archive.
+<p align="left">
+  <a href="https://github.com/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-/releases/tag/v1.0.0"><img src="https://img.shields.io/github/v/release/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-?label=GitHub%20Release&color=181717" alt="Latest GitHub release"></a>
+  <a href="https://www.kaggle.com/datasets/amirmahdizeynali/amir-mahdi-zeynali-machine-learning-portfolio"><img src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle dataset"></a>
+  <a href="https://github.com/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-"><img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white" alt="GitHub repository"></a>
+</p>
 
-[![Latest Release](https://img.shields.io/github/v/release/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-)](https://github.com/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-/releases/tag/v1.0.0)
-[![GitHub repository](https://img.shields.io/badge/GitHub-Portfolio-181717?logo=github)](https://github.com/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-)
+## Explore the portfolio
 
-## Download the complete portfolio
+| Resource | What you will find |
+|---|---|
+| [Kaggle Dataset](https://www.kaggle.com/datasets/amirmahdizeynali/amir-mahdi-zeynali-machine-learning-portfolio) | Dataset page and downloadable portfolio files |
+| [GitHub Release v1.0.0](https://github.com/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-/releases/tag/v1.0.0) | Complete ZIP archive (`رزومه.zip`) |
+| [Portfolio Showcase Notebook](Portfolio_Showcase.ipynb) | Guided index of the projects and a small archive-inspection utility |
 
-**Release:** [v1.0.0 — Machine Learning Portfolio](https://github.com/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-/releases/tag/v1.0.0)
-
-Download the `رزومه.zip` asset from the release page and extract it to access the complete folder structure.
+> **Quick start:** Download `رزومه.zip` from the [GitHub Release](https://github.com/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-/releases/tag/v1.0.0), extract it, and open the notebooks with Jupyter Notebook, JupyterLab, or Google Colab.
 
 ## Portfolio at a glance
 
@@ -24,27 +29,25 @@ Download the `رزومه.zip` asset from the release page and extract it to acce
 
 ## Areas of work
 
-### 1. Machine Learning
+### 1. Machine Learning and Python data tools
 
-Notebooks exploring regression, classification, model fundamentals, and common Python data-science tools:
+The `ML/` folder includes practical notebooks on:
 
 - Linear Regression — California housing price prediction
-- Support Vector Machines (SVM) and Kernel SVM
-- Support Vector Regression (SVR)
+- Support Vector Machine (SVM), Kernel SVM, and Support Vector Regression (SVR)
 - Decision Tree — Play Tennis example
 - Random Forest Classification
-- Diabetes-related analysis
+- Diabetes-related analysis and housing-data preprocessing
 - Gradient Descent
 - NumPy, pandas, Matplotlib, and Seaborn exercises
-- Housing data preprocessing
 - Upper Confidence Bound (UCB) and Thompson Sampling
 
 ### 2. Deep Learning and Neural Networks
 
-- **Artificial Neural Network (ANN):** `artificial_neural_network.ipynb`, accompanied by `Churn_Modelling.csv`.
-- **Convolutional Neural Network (CNN):** convolutional neural-network and image-classification notebooks, accompanied by a labeled image collection.
+- **Artificial Neural Network (ANN):** `ann/artificial_neural_network.ipynb`, with `ann/Churn_Modelling.csv`.
+- **Convolutional Neural Network (CNN):** `cnn/convolutional_neural_network.ipynb` and `cnn/cnn gender.ipynb`, with image folders split into `Training` and `Validation` and labeled `female` / `male`.
 
-The CNN image collection is organized into `Training` and `Validation` sets, each with `female` and `male` class folders:
+CNN image counts:
 
 | Split | Female | Male | Total |
 |---|---:|---:|---:|
@@ -52,9 +55,9 @@ The CNN image collection is organized into `Training` and `Validation` sets, eac
 | Validation | 5,841 | 5,808 | 11,649 |
 | **Total** | **29,084** | **29,574** | **58,658** |
 
-### 3. Bandit Algorithms and Association-Rule Mining
+### 3. Bandit algorithms and association-rule mining
 
-The `DEP Learning` section includes notebooks on:
+The `DEP Learning/` folder contains notebooks for:
 
 - UCB with 12,000 rounds
 - Contextual UCB with 15,000 observations
@@ -65,20 +68,16 @@ The `DEP Learning` section includes notebooks on:
 
 ### 4. Natural Language Processing
 
-- Natural Language Processing fundamentals and implementation exercises.
+- NLP fundamentals, text cleaning, and a Bag-of-Words workflow in `NLP/natural_language_processing.ipynb`.
 
-### 5. Data Preprocessing
-
-Notebooks and exercises covering:
+### 5. Data preprocessing
 
 - Car data preprocessing
 - Water-potability data preprocessing
 - Titanic data preprocessing
 - NumPy array and data-selection exercises
 
-### 6. Datasets
-
-The archive includes these CSV files:
+### 6. Included CSV datasets
 
 | File | Description |
 |---|---|
@@ -86,76 +85,74 @@ The archive includes these CSV files:
 | `pre/car_data.csv` | Car data with `Engine_Size` and `Price` columns |
 | `pre/water_potability.csv` | Water-quality features and `Potability` target |
 
-## Archive structure
+## Notebook index
 
-The following is the structure inside the downloaded ZIP archive:
+<details>
+<summary><strong>Machine Learning — ML/</strong></summary>
 
-```text
-رزومه/
-├── ML/
-│   ├── california_housing_price_linear_regression.ipynb
-│   ├── Diabet.ipynb
-│   ├── gradian_decend.ipynb
-│   ├── HOUSING_preprocess.ipynb
-│   ├── kernel_svm.ipynb
-│   ├── mat_plot_lib(seaborn).ipynb
-│   ├── mat_plot_lib.ipynb
-│   ├── numpy.ipynb
-│   ├── pandas(loc_iloc).ipynb
-│   ├── play_tennis_decision_tree.ipynb
-│   ├── random_forest_classification.ipynb
-│   ├── svm.ipynb
-│   ├── SVR1.ipynb
-│   ├── thompson_sampling.ipynb
-│   └── upper_confidence_bound.ipynb
-├── DEP Learning/
-│   ├── 01_UCB_12000_rounds.ipynb
-│   ├── 02_UCB_Context_15000.ipynb
-│   ├── 03_Thompson_18000_observations.ipynb
-│   ├── 04_Thompson_NonStationary_20000.ipynb
-│   ├── 06_MarketBasket_5000_binary.ipynb
-│   ├── 07_MarketBasket_5000_weighted.ipynb
-│   └── 08_ECLAT_8000x80_long.ipynb
-├── ann/
-│   ├── artificial_neural_network.ipynb
-│   └── Churn_Modelling.csv
-├── cnn/
-│   ├── cnn gender.ipynb
-│   ├── convolutional_neural_network.ipynb
-│   ├── Training/
-│   │   ├── female/
-│   │   └── male/
-│   └── Validation/
-│       ├── female/
-│       └── male/
-├── NLP/
-│   └── natural_language_processing.ipynb
-└── pre/
-    ├── Amir Mahde Zeynali CAR_DATA_PREPROCESS.ipynb
-    ├── Amir Mahde Zeynali WATER_DATA_preprocess.ipynb
-    ├── amir_mahdi_zeynali_1.ipynb
-    ├── amir_mahdi_zeynali_2.ipynb
-    ├── amir_mahdi_zeynali_3.ipynb
-    ├── TITANIC_pre_process.ipynb
-    ├── car_data.csv
-    └── water_potability.csv
-```
+- `california_housing_price_linear_regression.ipynb`
+- `Diabet.ipynb`
+- `gradian_decend.ipynb`
+- `HOUSING_preprocess.ipynb`
+- `kernel_svm.ipynb`
+- `mat_plot_lib(seaborn).ipynb`
+- `mat_plot_lib.ipynb`
+- `numpy.ipynb`
+- `pandas(loc_iloc).ipynb`
+- `play_tennis_decision_tree.ipynb`
+- `random_forest_classification.ipynb`
+- `svm.ipynb`
+- `SVR1.ipynb`
+- `thompson_sampling.ipynb`
+- `upper_confidence_bound.ipynb`
+
+</details>
+
+<details>
+<summary><strong>Bandits and Market Basket — DEP Learning/</strong></summary>
+
+- `Amir Mahde Zeynali 01_UCB_12000_rounds.ipynb`
+- `Amir Mahde Zeynali 02_UCB_Context_15000.ipynb`
+- `Amir Mahde Zeynali 03_Thompson_18000_observations.ipynb`
+- `Amir Mahde Zeynali 04_Thompson_NonStationary_20000.ipynb`
+- `Amir Mahde Zeynali 06_MarketBasket_5000_binary.ipynb`
+- `Amir Mahde Zeynali 07_MarketBasket_5000_weighted.ipynb`
+- `Amir Mahde Zeynali 08_ECLAT_8000x80_long.ipynb`
+
+</details>
+
+<details>
+<summary><strong>Other project folders</strong></summary>
+
+- `ann/artificial_neural_network.ipynb`
+- `cnn/cnn gender.ipynb`
+- `cnn/convolutional_neural_network.ipynb`
+- `NLP/natural_language_processing.ipynb`
+- `pre/Amir Mahde Zeynali CAR_DATA_PREPROCESS.ipynb`
+- `pre/Amir Mahde Zeynali WATER_DATA_preprocess.ipynb`
+- `pre/amir_mahdi_zeynali_1.ipynb`
+- `pre/amir_mahdi_zeynali_2.ipynb`
+- `pre/amir_mahdi_zeynali_3.ipynb`
+- `pre/TITANIC_pre_process.ipynb`
+
+</details>
 
 ## How to use
 
-1. Download `رزومه.zip` from the [v1.0.0 release](https://github.com/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-/releases/tag/v1.0.0).
-2. Extract the archive.
-3. Open the relevant `.ipynb` file with Jupyter Notebook, JupyterLab, or Google Colab.
-4. Make sure the dataset paths used by a notebook point to the extracted dataset location.
-5. Install the libraries imported by that notebook in your Python environment. The archive does not include a single consolidated dependency file, so requirements may differ between notebooks.
+1. Download `رزومه.zip` from the [GitHub Release](https://github.com/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-/releases/tag/v1.0.0) or use the [Kaggle Dataset](https://www.kaggle.com/datasets/amirmahdizeynali/amir-mahdi-zeynali-machine-learning-portfolio).
+2. Extract the archive if you downloaded the ZIP.
+3. Open a relevant `.ipynb` file with Jupyter Notebook, JupyterLab, or Google Colab.
+4. Check the dataset paths used by that notebook and adjust them to your extracted folder location.
+5. Install the libraries imported by the notebook. There is no single consolidated requirements file, so dependencies may differ between projects.
 
 ## Notes
 
 - This is a learning and project portfolio; notebooks may use different datasets, libraries, and workflows.
-- Dataset and image-source licensing may differ from the code. Check the original dataset terms before redistributing or reusing any included data.
-- No software or dataset license is declared by this repository at this time.
+- Dataset and image-source terms may differ from the code. Review the original terms before redistributing or reusing third-party data.
+- No single software or dataset license is declared for the entire collection.
 
 ---
 
 **Author:** Amir Mahdi Zeynali  
-**Repository:** [amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-](https://github.com/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-)
+**GitHub:** [amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-](https://github.com/amirmzvj/amir-mahdi-zeynali-machine-learning-portfolio-)  
+**Kaggle:** [Machine Learning Portfolio](https://www.kaggle.com/datasets/amirmahdizeynali/amir-mahdi-zeynali-machine-learning-portfolio)
